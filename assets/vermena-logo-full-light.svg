@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="65 72 480 116">
+  <g transform="translate(45,59.8) scale(1.228)">
+    <path d="M30 24 L60 90" stroke="#EEF1F3" stroke-width="13" stroke-linecap="round" fill="none"></path>
+    <path d="M60 90 L90 24" stroke="#16A3B8" stroke-width="13" stroke-linecap="round" stroke-dasharray="13 8" fill="none"></path>
+    <circle cx="60" cy="90" r="7.5" fill="#EEF1F3"></circle>
+  </g>
+  <text x="210" y="137.5" font-family="Archivo, sans-serif" font-weight="600" font-size="78" letter-spacing="-2" fill="#EEF1F3">Vermena</text>
+  <text x="210" y="175.5" font-family="IBM Plex Mono, monospace" font-weight="500" font-size="14" letter-spacing="6" fill="#9AA5AE">CONSULTING LLP</text>
+</svg>
