@@ -1,10 +1,6 @@
 (function () {
   var STORAGE_KEY = "vermena_cookie_consent";
-  var banner = document.getElementById("cookie-banner");
-  if (!banner) return;
-
-  var acceptBtn = document.getElementById("cookie-accept");
-  var declineBtn = document.getElementById("cookie-decline");
+  var GTM_ID = "GTM-KXFGPZDN";
 
   function getConsent() {
     try {
@@ -23,40 +19,54 @@
     );
   }
 
-  function hideBanner() {
-    banner.setAttribute("hidden", "");
+  // Same mechanism as GTM's own snippet, just under our control so it only
+  // runs once consent is given. Idempotent — safe to call more than once
+  // (e.g. once from the <head> snippet on return visits, once from here).
+  function loadGTM() {
+    if (window.__vermenaGtmLoaded) return;
+    window.__vermenaGtmLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = document.getElementsByTagName("script")[0];
+    var j = document.createElement("script");
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + GTM_ID;
+    f.parentNode.insertBefore(j, f);
   }
 
-  function showBanner() {
+  var banner = document.getElementById("cookie-banner");
+  var consent = getConsent();
+
+  if (consent === "accepted") {
+    // Belt-and-braces: the <head> snippet already does this on return
+    // visits, but calling it again here is harmless (see idempotent note).
+    loadGTM();
+  } else if (!consent && banner) {
     banner.removeAttribute("hidden");
   }
 
-  if (!getConsent()) {
-    showBanner();
-  }
+  if (banner) {
+    var acceptBtn = document.getElementById("cookie-accept");
+    var declineBtn = document.getElementById("cookie-decline");
 
-  if (acceptBtn) {
-    acceptBtn.addEventListener("click", function () {
-      setConsent("accepted");
-      hideBanner();
-    });
-  }
-  if (declineBtn) {
-    declineBtn.addEventListener("click", function () {
-      setConsent("declined");
-      hideBanner();
-    });
+    if (acceptBtn) {
+      acceptBtn.addEventListener("click", function () {
+        setConsent("accepted");
+        loadGTM();
+        banner.setAttribute("hidden", "");
+      });
+    }
+    if (declineBtn) {
+      declineBtn.addEventListener("click", function () {
+        setConsent("declined");
+        banner.setAttribute("hidden", "");
+      });
+    }
   }
 
   // Footer "Cookie settings" links call this to let a visitor change their mind.
   window.vermenaOpenCookieSettings = function (e) {
     if (e) e.preventDefault();
-    showBanner();
+    if (banner) banner.removeAttribute("hidden");
   };
-
-  // When consent is accepted, this is where you'd load analytics (e.g. GA4,
-  // Plausible) — keep those scripts out of the page until this event fires.
-  // document.addEventListener("vermena:cookie-consent", function (e) {
-  //   if (e.detail.consent === "accepted") { /* inject analytics script tag here */ }
-  // });
 })();

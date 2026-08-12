@@ -3,6 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager — loads only if the visitor already accepted cookies (see js/cookie-consent.js); this is not GTM's default unconditional snippet, it's consent-gated on purpose -->
+<script>
+(function(){try{if(localStorage.getItem('vermena_cookie_consent')==='accepted'){
+window.dataLayer=window.dataLayer||[];
+window.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var j=document.createElement('script');j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KXFGPZDN';
+document.head.appendChild(j);window.__vermenaGtmLoaded=true;}}catch(e){}})();
+</script>
+<!-- End Google Tag Manager -->
 <title>Message sent — Vermena Consulting</title>
 <meta name="description" content="Thanks for reaching out to Vermena Consulting. A partner will reply within one business day.">
 <meta name="robots" content="noindex, follow">
@@ -50,6 +60,15 @@
     <a href="https://www.linkedin.com/company/vermena-consulting" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </footer>
+
+<div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-label="Cookie consent">
+  <p>We use essential cookies to run this site, and — only with your consent — analytics cookies to understand how it's used. See our <a href="privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-banner-actions">
+    <button type="button" id="cookie-decline" class="btn btn-outline">Decline</button>
+    <button type="button" id="cookie-accept" class="btn btn-primary">Accept</button>
+  </div>
+</div>
+<script src="js/cookie-consent.js"></script>
 
 </body>
 </html>
