@@ -5,12 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Google Tag Manager — loads only if the visitor already accepted cookies (see js/cookie-consent.js); this is not GTM's default unconditional snippet, it's consent-gated on purpose -->
 <script>
-(function(){try{if(localStorage.getItem('vermena_cookie_consent')==='accepted'){
+(function(){try{
+var p=new URLSearchParams(location.search);
+if(p.get('internal')==='1'){localStorage.setItem('vermena_internal_traffic','true');}
+var isInternal=localStorage.getItem('vermena_internal_traffic')==='true';
+if(!isInternal&&localStorage.getItem('vermena_cookie_consent')==='accepted'){
 window.dataLayer=window.dataLayer||[];
 window.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var j=document.createElement('script');j.async=true;
 j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KXFGPZDN';
-document.head.appendChild(j);window.__vermenaGtmLoaded=true;}}catch(e){}})();
+document.head.appendChild(j);window.__vermenaGtmLoaded=true;
+}}catch(e){}})();
 </script>
 <!-- End Google Tag Manager -->
 <title>Contact — Vermena Consulting</title>

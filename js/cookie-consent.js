@@ -1,6 +1,25 @@
 (function () {
   var STORAGE_KEY = "vermena_cookie_consent";
+  var INTERNAL_KEY = "vermena_internal_traffic";
   var GTM_ID = "GTM-KXFGPZDN";
+
+  // Visiting once with ?internal=1 opts this browser out of analytics
+  // permanently (e.g. https://vermena.in/?internal=1) — team members bookmark
+  // that once instead of relying on IP-based filtering, which breaks the
+  // moment anyone works from outside a fixed office IP.
+  try {
+    if (new URLSearchParams(location.search).get("internal") === "1") {
+      localStorage.setItem(INTERNAL_KEY, "true");
+    }
+  } catch (e) {}
+
+  function isInternalTraffic() {
+    try {
+      return localStorage.getItem(INTERNAL_KEY) === "true";
+    } catch (e) {
+      return false;
+    }
+  }
 
   function getConsent() {
     try {
@@ -23,7 +42,7 @@
   // runs once consent is given. Idempotent — safe to call more than once
   // (e.g. once from the <head> snippet on return visits, once from here).
   function loadGTM() {
-    if (window.__vermenaGtmLoaded) return;
+    if (window.__vermenaGtmLoaded || isInternalTraffic()) return;
     window.__vermenaGtmLoaded = true;
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
