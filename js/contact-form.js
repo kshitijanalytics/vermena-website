@@ -80,17 +80,6 @@
       return;
     }
 
-    // Fold the optional "what are you using today" answer into the
-    // Description field so it isn't lost even if no matching custom field
-    // exists in Zoho yet. Left in place, the real POST + redirect to Zoho
-    // proceeds normally after this.
-    var using = form.elements["Current_Tools"];
-    var problem = form.elements["Description"];
-    if (using && using.value.trim()) {
-      problem.value =
-        "Currently using: " + using.value.trim() + "\n\n" + problem.value.trim();
-    }
-
     var submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) {
       submitBtn.disabled = true;

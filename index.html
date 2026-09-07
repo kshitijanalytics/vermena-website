@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- Google Tag Manager — loads only if the visitor already accepted cookies (see js/cookie-consent.js); this is not GTM's default unconditional snippet, it's consent-gated on purpose -->
 <script>
 (function(){try{
@@ -18,8 +19,9 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
 }}catch(e){}})();
 </script>
 <!-- End Google Tag Manager -->
-<title>Vermena Consulting — CRM Implementation &amp; RevOps Consulting</title>
-<meta name="description" content="CRM implementation, done by senior operators. We audit your sales process, implement your CRM, train your team, and stay on for maintenance.">
+
+<title>Vermena — Your End-to-End Product Growth Partner</title>
+<meta name="description" content="From product strategy to MVP launch and the systems that support growth, Vermena partners with early-stage founders to build, validate and scale with clarity.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vermena.in/">
 
@@ -29,40 +31,46 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#0d6e8c">
+<meta name="theme-color" content="#3300dd">
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Vermena Consulting">
+<meta property="og:site_name" content="Vermena">
 <meta property="og:locale" content="en_IN">
 <meta property="og:url" content="https://vermena.in/">
-<meta property="og:title" content="Vermena Consulting — CRM Implementation &amp; RevOps Consulting">
-<meta property="og:description" content="CRM implementation, done by senior operators. We audit your sales process, implement your CRM, train your team, and stay on for maintenance.">
+<meta property="og:title" content="Vermena — Your End-to-End Product Growth Partner">
+<meta property="og:description" content="From product strategy to MVP launch and the systems that support growth, Vermena partners with early-stage founders to build, validate and scale with clarity.">
 <meta property="og:image" content="https://vermena.in/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Vermena Consulting — CRM implementation, done by senior operators.">
+<meta property="og:image:alt" content="Vermena — Your End-to-End Product Growth Partner">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vermena Consulting — CRM Implementation &amp; RevOps Consulting">
-<meta name="twitter:description" content="CRM implementation, done by senior operators. We audit your sales process, implement your CRM, train your team, and stay on for maintenance.">
+<meta name="twitter:title" content="Vermena — Your End-to-End Product Growth Partner">
+<meta name="twitter:description" content="From product strategy to MVP launch and the systems that support growth, Vermena partners with early-stage founders to build, validate and scale with clarity.">
 <meta name="twitter:image" content="https://vermena.in/assets/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
 <header class="site-header">
-  <a class="logo" href="index.html"><img src="assets/vermena-logo.svg" alt="Vermena Consulting"></a>
+  <a class="logo" href="index.html">
+    <img src="assets/v-mark.svg" alt="">
+    <span class="logo-text">
+      <span class="logo-word">vermena</span>
+      <span class="logo-tagline"><span class="t1">Product.</span> <span class="t2">Build.</span> <span class="t3">Growth.</span></span>
+    </span>
+  </a>
   <nav class="site-nav">
     <a href="index.html" class="active">Home</a>
     <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="our-process.html">Our Process</a>
+    <a href="about.html">About Us</a>
   </nav>
   <div class="header-actions">
-    <a href="https://cal.com/kartikeyanegi/30min" class="btn btn-primary btn-small" target="_blank" rel="noopener">Book a discovery call</a>
+    <a href="contact.html" class="btn btn-primary btn-small">Contact Us</a>
     <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
     </button>
@@ -72,138 +80,215 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
 <div class="mobile-menu" id="mobile-menu" hidden>
   <a href="index.html">Home</a>
   <a href="services.html">Services</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="https://cal.com/kartikeyanegi/30min" class="btn btn-primary" target="_blank" rel="noopener">Book a discovery call</a>
+  <a href="our-process.html">Our Process</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html" class="btn btn-primary">Contact Us</a>
 </div>
 
+<!-- ============ Hero ============ -->
 <section class="hero">
   <div>
-    <div class="eyebrow">CRM IMPLEMENTATION · REVOPS CONSULTING</div>
-    <h1>CRM implementation, done by senior operators.</h1>
-    <p class="lead">We audit your sales process, implement your CRM, train your team, and stay on for maintenance — so your revenue engine actually runs the way it should.</p>
+    <div class="eyebrow eyebrow--pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+      Product thinking. Execution excellence. Growth systems.
+    </div>
+    <h1>Your end-to-end<br><span class="accent-purple">product</span> <span class="accent-green">growth</span> partner.</h1>
+    <p class="lead">From product strategy to MVP launch and the systems that support growth, Vermena partners with early-stage founders to build, validate and scale with clarity.</p>
     <div class="hero-actions">
-      <a href="https://cal.com/kartikeyanegi/30min" class="btn btn-primary" target="_blank" rel="noopener">Book a discovery call</a>
-      <a href="#how-we-engage" class="btn btn-outline">How we work</a>
+      <a href="https://cal.com/kartikeyanegi/30min" class="btn btn-primary" target="_blank" rel="noopener">Book a Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="services.html" class="btn btn-outline">Explore Services
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.3 3-5 6.5-5s6.5 1.7 6.5 5"/><circle cx="17.5" cy="9" r="2.8"/><path d="M15 20c.3-2.5 2-4.2 5-4.2"/></svg>
+        <div><div class="h">Founder-first approach</div><div class="d">We think like founders, act like partners.</div></div>
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+        <div><div class="h">End-to-end partnership</div><div class="d">Think it through. Build it right. Set it up to grow.</div></div>
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        <div><div class="h">Built for early stage</div><div class="d">From idea to initial scale and beyond.</div></div>
+      </div>
     </div>
   </div>
-  <div class="hero-quote">
-    <p>&ldquo;A CRM is as good as its data and implementation.&rdquo;</p>
-    <span>— why Vermena exists</span>
+  <div class="hero-cards">
+    <div class="card">
+      <div class="icon-tile purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div>
+      <h3>Product Strategy</h3>
+      <p>Define the right problem and build the right solution.</p>
+    </div>
+    <div class="card">
+      <div class="icon-tile green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+      <h3>Build &amp; Launch</h3>
+      <p>Ship faster with the right product.</p>
+    </div>
+    <div class="card">
+      <div class="icon-tile blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></div>
+      <h3>Systems for Growth</h3>
+      <p>Implement systems that help you scale.</p>
+    </div>
+    <div class="card">
+      <div class="icon-tile peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+      <h3>CRM Implementation</h3>
+      <p>Streamline your sales, marketing and customer operations.</p>
+    </div>
   </div>
 </section>
 
-<div class="stat-bar grid-4">
-  <div class="stat"><div class="num">30+ yrs</div><div class="label">combined operating experience</div></div>
-  <div class="stat"><div class="num">9+ yrs</div><div class="label">of partner experience in insurance</div></div>
-  <div class="stat"><div class="num">100%</div><div class="label">partner-led delivery, no juniors</div></div>
-  <div class="stat"><div class="num">Zoho</div><div class="label">Platform</div></div>
+<!-- ============ What we do ============ -->
+<section class="section section--soft">
+  <div class="section-head section--center" style="margin-left:auto;margin-right:auto">
+    <div class="eyebrow" style="justify-content:center;width:100%">WHAT WE DO</div>
+    <h2 style="font-size:34px;font-weight:800;margin:0 0 12px">Everything you need to <span class="accent-purple">build</span> and <span class="accent-green">grow</span></h2>
+    <p style="color:var(--muted);font-size:15.5px;margin:0">Strategic product guidance, fast execution and the right systems to scale.</p>
+  </div>
+  <div class="grid-3">
+    <div class="card offer-card">
+      <div class="icon-tile purple icon-tile--round"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+      <h3>Product Management Consulting</h3>
+      <p>We help you define the right problem, validate opportunities, craft product strategy, prioritize roadmap and set up metrics that drive outcomes.</p>
+      <a class="learn-more" href="services.html">Learn more
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="card offer-card">
+      <div class="icon-tile green icon-tile--round"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+      <h3>MVP Builds</h3>
+      <p>Turn your validated idea into a launch-ready MVP. We work with your development team or bring in Vermena's trusted engineering partners to build fast and right.</p>
+      <a class="learn-more" href="services.html">Learn more
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="card offer-card">
+      <div class="icon-tile purple icon-tile--round"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.3 3-5 6.5-5s6.5 1.7 6.5 5"/><circle cx="17.5" cy="9" r="2.8"/><path d="M15 20c.3-2.5 2-4.2 5-4.2"/></svg></div>
+      <h3>CRM Implementation</h3>
+      <p>Implement and optimize Zoho CRM to streamline your sales, marketing and customer operations—so your teams work in sync and grow together.</p>
+      <a class="learn-more" href="services.html">Learn more
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ How it works ============ -->
+<section class="section section--center">
+  <div class="section-head" style="margin-left:auto;margin-right:auto">
+    <div class="eyebrow" style="justify-content:center;width:100%">HOW IT WORKS</div>
+    <h2 style="font-size:32px;font-weight:800;margin:0">A proven process. Real outcomes.</h2>
+  </div>
+  <div class="process-track">
+    <div class="process-dots"></div>
+    <span class="step-num" style="left:20%">1</span>
+    <span class="step-num" style="left:40%">2</span>
+    <span class="step-num" style="left:60%">3</span>
+    <span class="step-num" style="left:80%">4</span>
+    <div class="process-row">
+      <div class="step"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h3>Discover</h3><p>We understand your problem, users, market and goals.</p></div>
+      <div class="step"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Define</h3><p>We shape the opportunity, strategy, roadmap and success metrics.</p></div>
+      <div class="step"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3>Build</h3><p>We build your MVP with speed and quality—either with your team or ours.</p></div>
+      <div class="step"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div><h3>Launch</h3><p>We help you launch, validate and learn with real users in the real world.</p></div>
+      <div class="step"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></div><h3>Improve</h3><p>We analyze, iterate and build systems that drive sustainable growth.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Why founders choose Vermena ============ -->
+<section class="section section--soft">
+  <div class="section-head section--center" style="margin-left:auto;margin-right:auto">
+    <h2 style="font-size:32px;font-weight:800;margin:0">We combine product thinking with <span class="accent-purple">execution</span> and <span class="accent-green">systems</span>.</h2>
+  </div>
+  <div class="grid-3">
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <div><div class="h">Product mindset</div><div class="d">We start with the problem and business outcome, not technology.</div></div>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      <div><div class="h">Fast &amp; focused</div><div class="d">We move fast, stay focused and help you avoid wasted time and money.</div></div>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><line x1="12" x2="12" y1="8" y2="14"/><line x1="9" x2="15" y1="11" y2="11"/></svg>
+      <div><div class="h">Flexible engagement</div><div class="d">We work with your team or let us lead end-to-end. We adapt to you.</div></div>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.3 3-5 6.5-5s6.5 1.7 6.5 5"/><circle cx="17.5" cy="9" r="2.8"/><path d="M15 20c.3-2.5 2-4.2 5-4.2"/></svg>
+      <div><div class="h">One partner across the journey</div><div class="d">From strategy to build to systems—you don't have to juggle multiple vendors.</div></div>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+      <div><div class="h">Early-stage experts</div><div class="d">We've worked across industries and understand what it takes to scale.</div></div>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg>
+      <div><div class="h">Long-term mindset</div><div class="d">We help you build the right foundations for compounding growth.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA band ============ -->
+<div class="cta-band">
+  <div class="cta-band-left">
+    <div class="eyebrow">READY TO BUILD AND GROW?</div>
+    <h2>Let's build something great together.</h2>
+  </div>
+  <p>Book a 30-minute consultation to discuss your idea, product or growth challenges.</p>
+  <a href="https://cal.com/kartikeyanegi/30min" class="btn btn-white" target="_blank" rel="noopener">Book a Consultation
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
 </div>
-
-<section class="section">
-  <div class="eyebrow">WHAT WE DO</div>
-  <h2 style="font:600 38px/1.15 'Source Serif 4',serif;margin:0 0 44px;max-width:620px">RevOps &amp; CRM services, end to end.</h2>
-  <div class="grid-2" style="gap:0;border-top:1px solid var(--border)">
-    <div class="service-cell">
-      <h3>Process &amp; systems audit</h3>
-      <p>We map your current sales process, tools and data flows before a single field is configured.</p>
-    </div>
-    <div class="service-cell">
-      <h3>New CRM implementation</h3>
-      <p>Requirements, pipeline design, workflows, automations and integrations — implemented hands-on by partners.</p>
-    </div>
-    <div class="service-cell">
-      <h3>CRM upgrade &amp; rescue</h3>
-      <p>Already on a CRM that nobody uses? We re-architect the setup, clean the data and win back adoption.</p>
-    </div>
-    <div class="service-cell">
-      <h3>Training &amp; maintenance</h3>
-      <p>We train your team on the system they'll live in, and stay on for regular maintenance as you grow.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0" id="how-we-engage">
-  <div class="navy-panel engage-banner">
-    <div>
-      <div class="eyebrow eyebrow--on-navy">HOW WE ENGAGE</div>
-      <h2>One engagement, four stages. No hand-offs, no juniors.</h2>
-    </div>
-    <div class="engage-steps">
-      <div><div class="num-circle">1</div><div class="step-title">Audit</div><p>Understand systems, processes and requirements in detail.</p></div>
-      <div><div class="num-circle">2</div><div class="step-title">Implement</div><p>Agree the plan, then build it hands-on — end to end.</p></div>
-      <div><div class="num-circle">3</div><div class="step-title">Train</div><p>Your team learns the system properly, from the people who built it.</p></div>
-      <div><div class="num-circle">4</div><div class="step-title">Maintain</div><p>Regular maintenance and support as your business evolves.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0">
-  <div class="grid-2">
-    <div>
-      <div class="eyebrow">WHO WE SERVE</div>
-      <h2 style="font:600 32px/1.2 'Source Serif 4',serif;margin:0 0 20px">Built for growing startups &amp; SMEs.</h2>
-      <p style="font-size:15px;line-height:1.65;color:var(--muted);margin:0 0 24px">Wherever your revenue engine runs — SaaS, fintech, healthcare, e-commerce, education or beyond — we implement the CRM around your process, not the other way round. Our partners bring extensive product management, engineering and consultancy experience to understand your business processes.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px">
-        <span class="pill">SaaS</span>
-        <span class="pill">Insurance</span>
-        <span class="pill">Fintech</span>
-        <span class="pill">Healthcare</span>
-        <span class="pill">E-commerce</span>
-        <span class="pill">Education</span>
-        <span class="pill">Real estate</span>
-      </div>
-    </div>
-    <div>
-      <div class="eyebrow">THE PARTNERS</div>
-      <div style="display:grid;gap:16px">
-        <div class="partner-row">
-          <img src="assets/kartikeya.jpeg" alt="Kartikeya Negi">
-          <div><div class="name">Kartikeya Negi</div><div class="role">11+ yrs — product management, strategy, market research. MBA, NMIMS Mumbai.</div></div>
-        </div>
-        <div class="partner-row">
-          <img src="assets/kshitij.jpeg" alt="Kshitij Gururani">
-          <div><div class="name">Kshitij Gururani</div><div class="role">21+ yrs — software development &amp; consulting. B.E. Computer Science.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section--bordered section--tight section--center" style="border-top:1px solid var(--border)">
-  <div class="cta-band">
-    <h2>Let's look at your sales process together.</h2>
-    <p>A 30-minute discovery call. No pitch decks, just questions.</p>
-    <a href="https://cal.com/kartikeyanegi/30min" class="btn btn-primary" target="_blank" rel="noopener">Book a discovery call</a>
-  </div>
-</section>
 
 <footer class="site-footer">
-<div class="footer-top">
-  <div class="footer-brand">
-    <img src="assets/vermena-logo-full-light.svg" alt="Vermena Consulting LLP">
-    <span>© 2026 Vermena Consulting LLP</span>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <a class="logo" href="index.html">
+        <img src="assets/v-mark-light.svg" alt="">
+        <span class="logo-text">
+          <span class="logo-word">vermena</span>
+          <span class="logo-tagline"><span class="t1">Product.</span> <span class="t2">Build.</span> <span class="t3">Growth.</span></span>
+        </span>
+      </a>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/vermena-consulting" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><path d="M20.4 20.4h-3.5v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6H9.5V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.6 0 4.2 2.4 4.2 5.4v6.2ZM5.3 7.4a2 2 0 1 1 0-4 2 2 0 0 1 0 4ZM7 20.4H3.6V9H7v11.4Z"/></svg></a>
+        <a href="mailto:contact@vermena.in" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="our-process.html">Our Process</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="services.html">Product Strategy</a>
+      <a href="services.html">Build &amp; Launch</a>
+      <a href="services.html">Systems for Growth</a>
+      <a href="services.html">CRM Implementation</a>
+    </div>
+    <div class="footer-col">
+      <h4>Let's connect</h4>
+      <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg><a href="mailto:contact@vermena.in" style="padding:0">contact@vermena.in</a></div>
+      <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+918796419994" style="padding:0">+91-8796419994</a></div>
+      <div class="contact-line"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6H9.5V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.6 0 4.2 2.4 4.2 5.4v6.2ZM5.3 7.4a2 2 0 1 1 0-4 2 2 0 0 1 0 4ZM7 20.4H3.6V9H7v11.4Z"/></svg><a href="https://www.linkedin.com/company/vermena-consulting" target="_blank" rel="noopener" style="padding:0">LinkedIn</a></div>
+    </div>
   </div>
-  <div class="footer-links">
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="terms.html">Terms</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="#" onclick="window.vermenaOpenCookieSettings(event)">Cookie settings</a>
-    <a href="https://www.linkedin.com/company/vermena-consulting" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="footer-bottom">
+    <span>© 2026 Vermena Consulting LLP. All rights reserved. &nbsp;&middot;&nbsp; LLPIN: ADA-0990 &nbsp;&middot;&nbsp; Registered in India</span>
+    <span><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms &amp; Conditions</a></span>
   </div>
-</div>
-<div class="footer-legal">
-  <span>Vermena Consulting LLP &middot; LLPIN: ADA-0990 &middot; Registered in India</span>
-  <span>www.vermena.in &middot; contact@vermena.in</span>
-</div>
 </footer>
 
 <div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-label="Cookie consent">
   <p>We use essential cookies to run this site, and — only with your consent — analytics cookies to understand how it's used. See our <a href="privacy.html">Privacy Policy</a>.</p>
   <div class="cookie-banner-actions">
-    <button type="button" id="cookie-decline" class="btn btn-outline">Decline</button>
+    <button type="button" id="cookie-decline" class="btn btn-outline" style="border-color:#3a5a68;color:#c8dee8">Decline</button>
     <button type="button" id="cookie-accept" class="btn btn-primary">Accept</button>
   </div>
 </div>
