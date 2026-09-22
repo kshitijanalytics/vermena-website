@@ -52,8 +52,9 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/services.css">
 </head>
-<body>
+<body class="services-page">
 
 <header class="site-header">
   <a class="logo" href="index.html">
@@ -85,13 +86,14 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
   <a href="contact.html" class="btn btn-primary">Contact Us</a>
 </div>
 
+<main>
 <!-- ============ Hero ============ -->
 <section class="hero">
   <div>
     <div class="eyebrow">SERVICES</div>
-    <h1 style="font-size:44px">Services that drive<br><span class="accent-purple">product</span> <span class="accent-green">growth</span><br>at every stage.</h1>
+    <h1>Services that drive<br><span class="accent-purple">product</span> <span class="accent-green">growth</span><br>at every stage.</h1>
     <p class="lead">From strategy to systems, we help you build, launch and scale products with clarity, speed and measurable impact.</p>
-    <div class="hero-actions" style="margin-bottom:0">
+    <div class="hero-actions">
       <a href="https://cal.com/kartikeyanegi/30min" class="btn btn-primary" target="_blank" rel="noopener">Book a Consultation
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -100,28 +102,31 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
       </a>
     </div>
   </div>
-  <div class="hero-illustration">
-    <div class="panel">
-      <svg viewBox="0 0 220 70" width="100%" height="60"><polyline points="0,55 35,30 70,42 110,10 150,24 190,4" fill="none" stroke="#3300dd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="190" cy="4" r="5" fill="#1a904b"/></svg>
+  <!-- Decorative illustration only; no metrics or customer data. -->
+  <div class="hero-illustration" aria-hidden="true">
+    <div class="panel growth-chart">
+      <span class="chart-placeholder"></span>
+      <svg viewBox="0 0 240 100" fill="none"><path d="M8 77C31 79 36 44 59 45S85 96 109 75S133 103 150 62S179 89 208 41L229 18" stroke="#3300dd" stroke-width="3.5" stroke-linecap="round"/><path d="M219 18h11v11" stroke="#3300dd" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <div class="panel">
-      <div class="bars"><span style="height:40%"></span><span style="height:70%"></span><span style="height:55%"></span><span style="height:90%"></span></div>
+    <div class="mini-chart"><div class="bars"><span></span><span></span><span></span><span></span></div></div>
+    <div class="panel growth-summary">
+      <div class="checklist"><span><i>✓</i><b></b></span><span><i>✓</i><b></b></span><span><i>✓</i><b></b></span></div>
       <div class="donut"></div>
     </div>
   </div>
 </section>
 
 <!-- ============ What we offer ============ -->
-<section class="section section--soft">
-  <div class="section-head section--center" style="margin-left:auto;margin-right:auto">
-    <div class="eyebrow" style="justify-content:center;width:100%">WHAT WE OFFER</div>
-    <h2 style="font-size:34px;font-weight:800;margin:0 0 12px">End-to-end services for <span class="accent-green">product growth</span></h2>
-    <p style="color:var(--muted);font-size:15.5px;margin:0">We partner with you across the product lifecycle to build the right things and build things right.</p>
+<section class="section section--soft services-offers">
+  <div class="section-head section--center">
+    <div class="eyebrow">WHAT WE OFFER</div>
+    <h2>End-to-end services for <span class="accent-green">product growth</span></h2>
+    <p>We partner with you across the product lifecycle to build the right things and build things right.</p>
   </div>
   <div class="grid-4">
     <div class="card offer-card">
       <div class="icon-tile purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div>
-      <h3 style="font-size:18px">Product Strategy</h3>
+      <h3>Product Strategy</h3>
       <p>Define the right problem, validate opportunities and build the right product strategy.</p>
       <ul>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3L16 9.5"/></svg>Market &amp; user research</li>
@@ -132,7 +137,7 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
     </div>
     <div class="card offer-card">
       <div class="icon-tile green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-      <h3 style="font-size:18px">Build &amp; Launch</h3>
+      <h3>Build &amp; Launch</h3>
       <p>Design, build and launch products that users love and businesses rely on.</p>
       <ul>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3L16 9.5"/></svg>MVP strategy &amp; build</li>
@@ -143,7 +148,7 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
     </div>
     <div class="card offer-card">
       <div class="icon-tile blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></div>
-      <h3 style="font-size:18px">Systems for Growth</h3>
+      <h3>Systems for Growth</h3>
       <p>Implement systems and analytics that help you scale with confidence.</p>
       <ul>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3L16 9.5"/></svg>Product analytics setup</li>
@@ -154,7 +159,7 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
     </div>
     <div class="card offer-card">
       <div class="icon-tile peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
-      <h3 style="font-size:18px">CRM Implementation</h3>
+      <h3>CRM Implementation</h3>
       <p>Streamline your customer journey and operations with the right CRM.</p>
       <ul>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3L16 9.5"/></svg>CRM selection advisory</li>
@@ -167,13 +172,13 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
 </section>
 
 <!-- ============ Ways we can work together ============ -->
-<section class="section">
+<section class="section services-engagement">
   <div class="engage-panel">
     <div class="engage-grid">
       <div>
         <div class="eyebrow">FLEXIBLE ENGAGEMENT</div>
-        <h2 style="font-size:24px;font-weight:800;margin:0 0 8px">Ways we can work together</h2>
-        <p style="font-size:14px;color:var(--muted);margin:0">Choose the engagement model that fits your goals, timeline and budget.</p>
+        <h2>Ways we can work together</h2>
+        <p>Choose the engagement model that fits your goals, timeline and budget.</p>
       </div>
       <div>
         <div class="icon-tile purple icon-tile--sm icon-tile--round"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.3 3-5 6.5-5s6.5 1.7 6.5 5"/><circle cx="17.5" cy="9" r="2.8"/><path d="M15 20c.3-2.5 2-4.2 5-4.2"/></svg></div>
@@ -195,10 +200,10 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
 </section>
 
 <!-- ============ Our approach ============ -->
-<section class="section section--center">
-  <div class="section-head" style="margin-left:auto;margin-right:auto">
-    <div class="eyebrow" style="justify-content:center;width:100%">OUR APPROACH</div>
-    <h2 style="font-size:32px;font-weight:800;margin:0">A proven approach that delivers results</h2>
+<section class="section section--center services-process">
+  <div class="section-head">
+    <div class="eyebrow">OUR APPROACH</div>
+    <h2>A proven approach that delivers results</h2>
   </div>
   <div class="process-track">
     <div class="process-dots"></div>
@@ -217,10 +222,10 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
 </section>
 
 <!-- ============ Who we help ============ -->
-<section class="section section--soft section--center">
-  <div class="section-head" style="margin-left:auto;margin-right:auto">
-    <div class="eyebrow" style="justify-content:center;width:100%">WHO WE HELP</div>
-    <h2 style="font-size:30px;font-weight:800;margin:0">We work with teams across industries</h2>
+<section class="section section--soft section--center services-industries">
+  <div class="section-head">
+    <div class="eyebrow">WHO WE HELP</div>
+    <h2>We work with teams across industries</h2>
   </div>
   <div class="industries-row">
     <div class="industry-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h.79a4.5 4.5 0 1 1 0 9Z"/></svg></div><span>SaaS</span></div>
@@ -244,6 +249,8 @@ document.head.appendChild(j);window.__vermenaGtmLoaded=true;
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </a>
 </div>
+
+</main>
 
 <footer class="site-footer">
   <div class="footer-grid">
