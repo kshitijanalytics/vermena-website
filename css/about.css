@@ -1,0 +1,137 @@
+/* About-page presentation only. Shared behavior and other pages are unchanged. */
+.about-page{color:#080e2f}
+.about-page .site-header{max-width:1280px;margin:auto;padding:17px 4%;border:0;flex-wrap:nowrap;gap:30px}
+.about-page .site-header .logo{gap:8px;flex:none}
+.about-page .site-header .logo img{width:46px;height:46px}
+.about-page .site-header .logo-word{font-size:32px;letter-spacing:-1.1px}
+.about-page .site-header .logo-tagline{font-size:12px;margin-top:3px}
+.about-page .site-nav{margin-left:auto;gap:36px;font-size:13px}
+.about-page .site-nav a{position:relative;white-space:nowrap;padding:14px 0}
+.about-page .site-nav a.active::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--purple)}
+.about-page .btn{font-size:13px;min-height:44px;padding:12px 22px;border-radius:6px;gap:20px;justify-content:center}
+.about-page main{overflow:hidden}
+.about-page .hero{position:relative;isolation:isolate;max-width:1200px;margin:auto;padding:32px 5.3% 28px;grid-template-columns:.96fr 1.04fr;gap:48px;align-items:stretch}
+.about-page .hero::before{content:"";position:absolute;z-index:-1;right:0;top:4px;width:27%;height:255px;pointer-events:none;background:radial-gradient(#a08cff .7px,transparent .8px) 0 0/16px 16px}
+.about-page .eyebrow{font-size:11px;font-weight:700;letter-spacing:0;color:var(--purple);margin:0 0 18px;line-height:1.4}
+.about-page .hero h1{font-size:40px!important;line-height:1.2;letter-spacing:-1.5px;font-weight:700;margin:0 0 24px}
+.about-page .hero p.lead{font-size:14px;line-height:1.9;color:#121b40;max-width:430px!important;margin:0 0 20px!important}
+.about-page .hero .hero-badges{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:30px!important}
+.about-page .hero-badge{max-width:none;gap:14px;padding-right:22px;color:#0b1034}
+.about-page .hero-badge+.hero-badge{border-left:1px solid #d9dce7;padding-left:22px;padding-right:0}
+.about-page .hero-badge svg{width:38px;height:38px;color:var(--purple);stroke-width:1.7}
+.about-page .hero-badge .h{font-size:11.5px;margin-bottom:5px}
+.about-page .hero-badge .d{font-size:11px;line-height:1.75;color:#121b40}
+.about-page .hero>div:last-child{height:400px;border-radius:14px!important;box-shadow:0 3px 12px #0b10340b}
+.about-page .hero>div:last-child img{object-position:center}
+.about-page .section{max-width:1200px;margin:auto}
+.about-page .about-principles{padding:0 3.5% 15px!important}
+.about-page .about-trio{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+.about-page .about-trio .card{position:relative;overflow:hidden;min-height:382px;padding:24px 22px;border-color:#efeff5;border-radius:12px;box-shadow:0 2px 10px #121b4005}
+.about-page .about-trio .card:first-child::after{content:"";position:absolute;right:15px;bottom:-16px;width:150px;height:150px;background:url('../assets/v-mark.svg') center/contain no-repeat;opacity:.055;filter:grayscale(1)}
+.about-page .about-trio .eyebrow{margin-bottom:16px;text-transform:none}
+.about-page .about-trio h3{font-size:21px;line-height:1.48;letter-spacing:-.5px;margin:0 0 28px}
+.about-page .about-trio>.card>p{position:relative;z-index:1;font-size:12.5px;line-height:2;color:#121b40;margin:0;max-width:220px}
+.about-page .believe-item,.about-page .stat-item{border:0;padding:0;margin-bottom:18px;gap:16px}
+.about-page .believe-item:last-child,.about-page .stat-item:last-child{margin-bottom:0}
+.about-page .believe-item .icon-tile,.about-page .stat-item .icon-tile{width:50px;height:50px;margin:0;border-radius:11px;flex:none}
+.about-page .believe-item .icon-tile svg,.about-page .stat-item .icon-tile svg{width:27px;height:27px;stroke-width:1.7}
+.about-page .believe-item .h{font-size:12.5px;margin:0 0 4px}
+.about-page .believe-item .d{font-size:11px;line-height:1.75;color:#121b40}
+.about-page .stat-item .num{font-size:20px;line-height:1.25;letter-spacing:-.4px}
+.about-page .stat-item .label{font-size:11px;line-height:1.7;color:#121b40;margin-top:3px}
+.about-page .about-founders{padding:0 5.3% 14px;background:#fff}
+.about-page .about-founders .grid-2{grid-template-columns:.58fr 1.12fr;gap:36px;align-items:stretch!important}
+.about-page .about-founders .eyebrow{margin:14px 0 18px}
+.about-page .about-founders h2{font-size:29px!important;line-height:1.45;font-weight:700!important;letter-spacing:-.8px;margin:0 0 14px!important}
+.about-page .about-founders .grid-2>div:first-child>p{font-size:11.5px!important;line-height:1.85!important;color:#121b40!important;margin:0 0 10px!important}
+.about-page .about-founders .grid-2>div:first-child>p:last-child{margin-bottom:0!important}
+.about-page .founder-pair{min-height:318px;padding:10px 0 12px;border:0;border-radius:12px;background:#faf9fd;box-shadow:none}
+.about-page .founder-pair .founder{padding:0 52px;text-align:left}
+.about-page .founder-pair .founder:first-child{border-color:#d9dce7}
+.about-page .founder-pair img{width:108px;height:108px;margin:0 auto 6px;border-radius:50%;object-fit:cover}
+.about-page .founder-pair .name{font-size:20px;line-height:1.3;letter-spacing:-.3px}
+.about-page .founder-pair .role{font-size:13px;margin:2px 0 4px;color:var(--green)}
+.about-page .founder-pair .years{font-size:12.5px;margin-bottom:4px}
+.about-page .founder-pair p.bio{font-size:11.5px;line-height:1.65;color:#121b40}
+.about-page .cta-band{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1.35fr .85fr auto;gap:34px;padding:18px max(8%,calc((100% - 930px)/2));background:linear-gradient(100deg,#241080,#110344);flex-wrap:nowrap}
+.about-page .cta-band::before{content:"";position:absolute;z-index:-1;left:-115px;top:-70px;width:250px;height:250px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 16px,#ffffff20 17px 18px)}
+.about-page .cta-band::after{content:"";position:absolute;z-index:-1;right:0;top:0;width:180px;height:100%;background:radial-gradient(#8050d9 1px,transparent 1px) 0 0/12px 12px;opacity:.6}
+.about-page .cta-band-inner{gap:20px}
+.about-page .cta-icon{width:52px;height:52px;background:#4822f4}
+.about-page .cta-band h2{font-size:22px;line-height:1.35;font-weight:600}
+.about-page .cta-band p{font-size:11.5px;line-height:1.9;color:#fff;max-width:270px}
+.about-page .cta-band .btn{font-size:11.5px;padding:13px 22px;color:var(--purple)}
+.about-page .site-footer{padding:18px 4% 0}
+.about-page .footer-grid{max-width:1100px;margin:auto;grid-template-columns:1.15fr .85fr 1fr 1.4fr;gap:40px;padding-bottom:14px}
+.about-page .site-footer .logo{display:inline-flex;gap:6px}
+.about-page .site-footer .logo img{width:40px;height:40px}
+.about-page .site-footer .logo-word{font-size:27px;letter-spacing:-.8px}
+.about-page .site-footer .logo-tagline{font-size:9px;margin-top:2px}
+.about-page .footer-col h4{font-size:11.5px;text-transform:none;letter-spacing:0;margin-bottom:8px}
+.about-page .footer-col a{font-size:11.5px;padding:2px 0;color:#e2e7f5}
+.about-page .footer-col .contact-line{gap:10px;padding:4px 0}
+.about-page .footer-social{gap:8px;margin-top:12px}
+.about-page .footer-social a{width:28px;height:28px;padding:0;display:flex}
+.about-page .footer-bottom{max-width:1100px;margin:auto;padding:12px 0;font-size:9.5px;color:#e2e7f5}
+.about-page .footer-bottom a{color:inherit}
+.about-page a:focus-visible,.about-page button:focus-visible{outline:3px solid #9474ff;outline-offset:4px}
+@media(min-width:1200px){.about-page .hero{padding-left:40px;padding-right:40px}.about-page .about-principles{padding-left:24px!important;padding-right:24px!important}}
+@media(min-width:901px) and (max-width:1080px){
+  .about-page .site-header{padding-left:4%;padding-right:4%;gap:24px}
+  .about-page .site-nav{gap:32px}
+  .about-page .hero{grid-template-columns:.94fr 1.06fr;gap:32px}
+  .about-page .hero>div:last-child{width:100%;max-width:432px}
+  .about-page .hero h1{font-size:34px!important}
+  .about-page .about-trio .card{padding-left:22px;padding-right:22px}
+  .about-page .about-founders h2{font-size:27px!important;line-height:1.35}
+  .about-page .about-founders .grid-2>div:first-child>p{line-height:1.7!important}
+  .about-page .founder-pair .founder{padding-left:50px;padding-right:50px}
+  .about-page .cta-band{padding-left:11.5%;padding-right:11.5%}
+}
+@media(max-width:900px){
+  .about-page .site-header{padding:18px 5%;gap:16px}
+  .about-page .site-header .logo-word{font-size:30px}
+  .about-page .site-header .logo img{width:44px;height:44px}
+  .about-page .header-actions{margin-left:auto}
+  .about-page .mobile-menu:not([hidden]){top:84px;padding:12px 5%}
+  .about-page .hero{padding:34px 5%;grid-template-columns:1fr;gap:30px}
+  .about-page .hero h1{font-size:40px!important;max-width:650px}
+  .about-page .hero p.lead{max-width:680px!important}
+  .about-page .hero>div:last-child{height:340px}
+  .about-page .about-principles{padding:0 5% 26px!important}
+  .about-page .about-trio{grid-template-columns:1fr 1fr;gap:16px}
+  .about-page .about-trio .card:first-child{grid-column:1/-1;min-height:auto}
+  .about-page .about-founders{padding:0 5% 26px}
+  .about-page .about-founders .grid-2{grid-template-columns:1fr;gap:24px}
+  .about-page .about-founders .grid-2>div:first-child{max-width:680px}
+  .about-page .founder-pair{grid-template-columns:1fr 1fr;gap:0}
+  .about-page .founder-pair .founder:first-child{border-right:1px solid #d9dce7;border-bottom:0;padding-bottom:0}
+  .about-page .cta-band{padding:24px 5%;grid-template-columns:1fr 1fr;gap:24px}
+  .about-page .cta-band .btn{justify-self:start}
+  .about-page .footer-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .about-page .footer-col h4{font-size:14px}
+  .about-page .footer-col a{font-size:13px;padding:5px 0}
+  .about-page .footer-bottom{font-size:11px;line-height:1.8}
+}
+@media(max-width:600px){
+  .about-page .hero h1{font-size:35px!important}
+  .about-page .hero p.lead{font-size:14px}
+  .about-page .hero .hero-badges{grid-template-columns:1fr;gap:18px}
+  .about-page .hero-badge+.hero-badge{border-left:0;border-top:1px solid #d9dce7;padding:18px 0 0}
+  .about-page .hero>div:last-child{height:270px}
+  .about-page .about-trio{grid-template-columns:1fr}
+  .about-page .about-trio .card:first-child{grid-column:auto}
+  .about-page .about-trio .card{min-height:auto}
+  .about-page .about-founders h2{font-size:27px!important}
+  .about-page .founder-pair{grid-template-columns:1fr;padding:20px}
+  .about-page .founder-pair .founder{padding:0 12px}
+  .about-page .founder-pair .founder:first-child{border-right:0;border-bottom:1px solid #d9dce7;padding-bottom:28px;margin-bottom:28px}
+  .about-page .cta-band{grid-template-columns:1fr;gap:18px}
+  .about-page .cta-band h2{font-size:24px}
+  .about-page .footer-col:first-child,.about-page .footer-col:last-child{grid-column:1/-1}
+}
+@media(max-width:360px){
+  .about-page .hero h1{font-size:32px!important}
+  .about-page .about-trio .card{padding:20px 18px}
+}
+@media(prefers-reduced-motion:reduce){html:has(.about-page){scroll-behavior:auto}}
